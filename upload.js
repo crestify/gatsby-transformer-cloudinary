@@ -34,7 +34,7 @@ exports.uploadImageToCloudinary = async ({
     overwrite,
     public_id: publicId,
     resource_type: 'auto',
-    timeout: FIVE_MINUTES,
+    timeout: FIVE_MINUTES * 4,
   };
 
   // Each time we ask Cloudinary to calculate the responsive breakpoints for an
